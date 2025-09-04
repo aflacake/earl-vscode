@@ -26,10 +26,20 @@
         "path": "./syntaxes/earl.tmLanguage.json"
       }
     ],
+    "configuration": {
+      "title": "Earl",
+      "properties": {
+        "earl.interpreterPath": {
+          "type": "string",
+          "default": "node /path/ke/earl-lang/index.js",
+          "description": "Perintah atau jalur untuk menjalankan interpreter Earl. Contoh: 'node C:\Users\NamaAnda\Dokumen\earl-lang\index.js'"
+        }
+      }
+    },
     "commands": [
       {
         "command": "earl.runFile",
-        "title": "Run Earl File"
+        "title": "Jalankan Earl File"
       }
     ]
   },
