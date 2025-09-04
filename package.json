@@ -1,0 +1,49 @@
+{
+  "name": "earl-vscode",
+  "displayName": "Dukungan Bahasa Earl",
+  "description": "Penyorotan sintaksis dan perkakas untuk bahasa Earl",
+  "version": "0.0.1",
+  "publisher": "Nazwa Shabrina Zain",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Programming Languages"],
+  "activationEvents": ["onLanguage:earl"],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "earl",
+        "aliases": ["Earl", "earl"],
+        "extensions": [".earl"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "earl",
+        "scopeName": "source.earl",
+        "path": "./syntaxes/earl.tmLanguage.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "earl.runFile",
+        "title": "Run Earl File"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "@types/node": "16.x",
+    "typescript": "^5.0.0",
+    "vsce": "^2.15.0"
+  }
+}
