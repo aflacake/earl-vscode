@@ -31,7 +31,7 @@
       "properties": {
         "earl.interpreterPath": {
           "type": "string",
-          "default": "node /path/ke/earl-lang/index.js",
+          "default": "node /jalur/ke/earl-lang/index.js",
           "description": "Perintah atau jalur untuk menjalankan interpreter Earl. Contoh: 'node C:\Users\NamaAnda\Dokumen\earl-lang\index.js'"
         }
       }
