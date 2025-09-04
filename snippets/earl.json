@@ -1,0 +1,81 @@
+{
+  "Jika": {
+    "prefix": "jika",
+    "body": [
+      "jika ${1:variabel} ${2:==} ${3:nilai} maka",
+      "    ${4:// aksi jika benar}",
+      "selesai"
+    ],
+    "description": "Blok jika"
+  },
+
+  "Jika Lainnya": {
+    "prefix": "jikalainnya",
+    "body": [
+      "jika ${1:variabel} ${2:==} ${3:nilai} maka",
+      "    ${4:// aksi jika benar}",
+      "jika-lainnya",
+      "    ${5:// aksi jika salah}",
+      "selesai-jika"
+    ],
+    "description": "Blok jika dengan jika-lainnya"
+  },
+
+  "Lain": {
+    "prefix": "lain",
+    "body": [
+      "jika ${1:variabel} ${2:==} ${3:nilai} maka",
+      "    ${4:// aksi jika benar}",
+      "lain",
+      "    ${5:// aksi jika salah}",
+      "selesai-jika"
+    ],
+    "description": "Blok jika dengan lain"
+  },
+
+  "Fungsi": {
+    "prefix": "fungsi",
+    "body": [
+      "fungsi ${1:namaFungsi}(${2:params})",
+      "    ${3:// isi fungsi}",
+      "selesai"
+    ],
+    "description": "Definisi fungsi"
+  },
+
+  "Kelas": {
+    "prefix": "kelas",
+    "body": [
+      "kelas ${1:NamaKelas}",
+      "    atribut ${2:namaAtribut}",
+      "    metode ${3:namaMetode}",
+      "        ${4:// isi metode}",
+      "    selesai",
+      "selesai"
+    ],
+    "description": "Definisi kelas"
+  },
+
+  "Kelas Mewarisi": {
+    "prefix": "kelasMewarisi",
+    "body": [
+      "kelas ${1:NamaKelas} mewarisi ${2:Induk}",
+      "    atribut ${3:namaAtribut}",
+      "    metode ${4:namaMetode}",
+      "        ${5:// isi metode}",
+      "    selesai",
+      "selesai"
+    ],
+    "description": "Definisi kelas dengan pewarisan"
+  },
+
+  "UntukSetiap": {
+    "prefix": "untukSetiap",
+    "body": [
+      "untukSetiap ${1:koleksi} setiap :${2:item}:",
+      "    ${3:// aksi untuk setiap item}",
+      "selesai"
+    ],
+    "description": "Loop untuk setiap item dalam koleksi"
+  }
+}
