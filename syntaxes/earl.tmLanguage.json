@@ -1,0 +1,22 @@
+{
+  "scopeName": "source.earl",
+  "patterns": [
+    {
+      "name": "keyword.control.earl",
+      "match": "\\b(jika|ulangi|fungsi|kelas|untukSetiap|selesai)\\b"
+    },
+    {
+      "name": "constant.language.boolean.earl",
+      "match": "\\b(benar|salah)\\b"
+    },
+    {
+      "name": "string.quoted.double.earl",
+      "begin": "\"",
+      "end": "\""
+    },
+    {
+      "name": "comment.line.double-dash.earl",
+      "match": "--.*$"
+    }
+  ]
+}
