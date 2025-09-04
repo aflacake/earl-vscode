@@ -16,8 +16,11 @@ export function activate(context: vscode.ExtensionContext) {
 
     const filePath = doc.fileName;
 
-    // Sesuaikan jalur folder ke interpreter Earl Anda
-    exec(`node /jalur/ke/earl-lang/index.js ${filePath}`, (err, stdout, stderr) => {
+    // Ambil informasi konfigurasi dari package.json
+    const config = vscode.workspace.getConfiguration('earl');
+    const interpreter = config.get<string>('interpreterPath') || 'node index.js';
+
+    exec(`${interpreter} ${filePath}`, (err, stdout, stderr) => {
       if (err) {
         vscode.window.showErrorMessage(`Kesalahan: ${stderr}`);
         return;
