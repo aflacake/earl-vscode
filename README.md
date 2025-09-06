@@ -2,6 +2,10 @@
 Penyorotan sintaksis dan perkakas untuk bahasa Earl
 > Beberapa pengembangan proyek ini juga hasil dari geneative AI
 
+# Langkah Pertama
+## Unduh Earl Bahasa Pemrograman
+**[Unduh Earl Bahasa Pemrograman Alur Kerja](https://github.com/aflacake/earl-lang)**.
+
 # Instalasi
 ## Penggunaan
 Isi jalur atau _path_ untuk file Anda.
